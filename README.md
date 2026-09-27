@@ -15,7 +15,7 @@ Se conserva el endpoint AJAX de FormSubmit con su identificador, campos obligato
 
 ## Recursos externos y contenido actual
 Las tipografías usan Google Fonts y el envío depende de FormSubmit, igual que en la versión original; necesitan conexión a Internet. Los perfiles sociales y el enlace del proyecto M&C mantienen sus destinos actuales.
-Alsacia conserva el espacio pendiente de imágenes presente en la web actual. El PDF entregado no se ha incorporado para respetar la instrucción de no cambiar contenido. Los Reels reservados permanecen dentro de una plantilla inactiva.
+Alsacia incluye el mockup proporcionado y la descripción final del proyecto. El PDF original se utilizó como referencia y no se publica. Los Reels reservados permanecen dentro de una plantilla inactiva.
 
 ## Comprobaciones realizadas
 - Archivos web copiados sin modificaciones y verificados byte a byte dentro del ZIP.
