@@ -2,6 +2,7 @@
   const dialog = document.getElementById('project-dialog');
   const title = document.getElementById('project-dialog-title');
   const body = dialog.querySelector('.project-dialog-body');
+  const assetBase = new URL('.', document.currentScript?.src || document.baseURI);
   const projects = {
     mc: { title: 'M&C Mi Casa — Gestión Inmobiliaria', images: [['mc-mi-casa.png', 'Mockup del sitio en computador y teléfono', 1618, 972]] },
     alsacia: { title: 'ALSACIA — Tríptico corporativo', images: [['alsacia-cara-1.png', 'Cara exterior del tríptico original', 2400, 1571], ['alsacia-cara-2.png', 'Cara interior del tríptico original', 2400, 1571]] }
@@ -19,11 +20,36 @@
         const label = document.createElement('figcaption');
         label.textContent = caption;
         const img = document.createElement('img');
-        Object.assign(img, { src, alt: caption, width, height });
-        figure.append(label, img);
+        const status = document.createElement('p');
+        status.className = 'project-image-status';
+        status.setAttribute('role', 'status');
+        status.textContent = 'Cargando imagen…';
+        img.addEventListener('load', () => status.remove(), { once: true });
+        img.addEventListener('error', () => {
+          status.textContent = 'No se pudo cargar la imagen. Cierra el visor y vuelve a intentarlo.';
+        }, { once: true });
+        Object.assign(img, { alt: caption, width, height, decoding: 'async' });
+        img.src = new URL(src, assetBase).href;
+        img.tabIndex = 0;
+        img.setAttribute('role', 'button');
+        img.setAttribute('aria-label', caption + '. Ampliar o ajustar imagen');
+        img.setAttribute('aria-pressed', 'false');
+        const imageFrame = document.createElement('div');
+        imageFrame.className = 'project-image-frame';
+        const toggleZoom = () => {
+          const zoomed = imageFrame.classList.toggle('is-zoomed');
+          img.setAttribute('aria-pressed', String(zoomed));
+        };
+        img.addEventListener('click', toggleZoom);
+        img.addEventListener('keydown', event => {
+          if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); toggleZoom(); }
+        });
+        imageFrame.append(img);
+        figure.append(label, status, imageFrame);
         body.append(figure);
       });
       dialog.showModal();
+      dialog.querySelector('.project-dialog-close').focus();
       document.body.classList.add('project-view-open');
       body.scrollTop = 0;
     });
