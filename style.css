@@ -99,3 +99,13 @@
 
 /* Segundo proyecto: reutiliza los estilos actuales del portafolio. */
 #alsacia{margin-top:32px}#alsacia .project-placeholder{min-width:0}#alsacia .alsacia-participation{font-size:16px;color:var(--muted);margin:18px 0 0;max-width:78ch}@media(width < 640px){#alsacia{margin-top:24px}#alsacia .alsacia-participation{margin-top:14px}}
+
+/* Visor de los trabajos seleccionados. */
+.project-context-label{display:block;color:var(--white);font-size:14px;font-weight:600;margin-bottom:8px}#trabajo .project-view-button{margin-top:24px;cursor:pointer;min-height:48px}.project-dialog{padding:0;border:1px solid #48305f;border-radius:14px;background:#101013;color:var(--white);width:calc(100% - 48px);max-width:1240px;max-height:90vh;max-height:90dvh;overflow:hidden}.project-dialog::backdrop{background:rgba(0,0,0,.88)}.project-dialog-shell{display:flex;flex-direction:column;max-height:90vh;max-height:90dvh}.project-dialog-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;border-bottom:1px solid #48305f;flex-shrink:0}.project-dialog-header h2{font-size:22px;line-height:1.3;letter-spacing:-.5px;margin:0}.project-dialog-close{flex-shrink:0;width:48px;height:48px;border:1px solid #5c4076;border-radius:7px;background:#23172f;color:white;font-size:32px;line-height:1;cursor:pointer}.project-dialog-body{padding:20px;overflow:auto;overscroll-behavior:contain;min-height:0}.project-dialog figure{margin:0 0 24px}.project-dialog figure:last-child{margin-bottom:0}.project-dialog figcaption{color:#c5becf;font-size:14px;margin-bottom:10px}.project-dialog img{display:block;width:100%;height:auto;object-fit:contain;border-radius:6px}.project-dialog-body:focus-visible{outline:2px solid var(--purple);outline-offset:-3px}body.project-view-open{overflow:hidden}@media(max-width:640px){.project-dialog{width:calc(100% - 24px);max-height:92vh;max-height:92dvh}.project-dialog-shell{max-height:92vh;max-height:92dvh}.project-dialog-header{padding:12px}.project-dialog-header h2{font-size:18px}.project-dialog-body{padding:12px}.project-dialog figure{margin-bottom:20px}#trabajo .project-view-button{width:100%}}
+
+/* Contraste y separación de los controles del visor. */
+#trabajo .project-view-button { color: var(--white); }
+#trabajo .project-intro > a.button + .project-view-button { margin-left: 10px; }
+@media (max-width: 640px) {
+  #trabajo .project-intro > a.button + .project-view-button { margin-left: 0; margin-top: 12px; }
+}
