@@ -1,27 +1,39 @@
-# Portafolio Matías — GitHub Pages
+ # Portafolio — Matías González
 
-Esta copia conserva exactamente los archivos actuales de la web: HTML, CSS, JavaScript e imágenes. No requiere compilación ni instalación.
+Portafolio personal de **Matías González**, Diseñador Gráfico Digital enfocado en diseño visual, desarrollo web y aplicación de herramientas de Inteligencia Artificial en proyectos creativos y digitales.
 
-## Publicación en portafolio-matias
-1. Descomprime este ZIP.
-2. Sube su contenido a la raíz de la rama main del repositorio portafolio-matias. index.html debe quedar directamente en la raíz, no dentro de otra carpeta. No subas solamente el ZIP.
-3. En Settings > Pages, selecciona Deploy from a branch, main y / (root), y guarda.
-4. Abre la dirección que GitHub muestre cuando termine la publicación. Para un repositorio de proyecto normalmente tendrá el formato https://TU-USUARIO.github.io/portafolio-matias/.
+## Sobre el proyecto
 
-Las rutas de imágenes, estilos y JavaScript son relativas, compatibles con ese subdirectorio. El favicon está incluido dentro del HTML. .nojekyll permite servir estos archivos como sitio estático.
+Este sitio fue desarrollado como mi portafolio profesional para presentar mi experiencia, servicios y proyectos.
 
-## Formulario
-Se conserva el endpoint AJAX de FormSubmit con su identificador, campos obligatorios, protección honeypot y mensajes de respuesta. No requiere un servidor propio ni secretos de GitHub. Después de publicar, envía una consulta real desde la URL definitiva para verificar recepción; si FormSubmit pide confirmar la nueva dirección del sitio, sigue el correo de activación. No pruebes el envío abriendo index.html como file://.
+El diseño, estructura visual, selección de contenidos y experiencia del sitio fueron desarrollados y ajustados de acuerdo con mi identidad profesional.
 
-## Recursos externos y contenido actual
-Las tipografías usan Google Fonts y el envío depende de FormSubmit, igual que en la versión original; necesitan conexión a Internet. Los perfiles sociales y el enlace del proyecto M&C mantienen sus destinos actuales.
-Alsacia incluye el mockup proporcionado y la descripción final del proyecto. El PDF original se utilizó como referencia y no se publica. Los Reels reservados permanecen dentro de una plantilla inactiva.
+## Áreas de trabajo
 
-## Comprobaciones realizadas
-- Archivos web copiados sin modificaciones y verificados byte a byte dentro del ZIP.
-- Rutas locales resueltas bajo /portafolio-matias/ y recursos existentes.
-- Anclas internas existentes y configuración de FormSubmit conservada.
-- Sintaxis del JavaScript comprobada.
-La publicación real en tu cuenta y una prueba de correo desde su URL definitiva quedan pendientes.
+- Diseño gráfico y comunicación visual
+- Diseño y desarrollo web
+- Identidad visual
+- Contenido para redes sociales
+- Marketing digital
+- Inteligencia Artificial aplicada al diseño y procesos creativos
 
-Documentación oficial: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+## Tecnologías
+
+- HTML5
+- CSS3
+- JavaScript
+- GitHub Pages
+
+Durante mi flujo de trabajo utilizo herramientas digitales y de Inteligencia Artificial como apoyo para optimizar procesos de diseño, desarrollo, investigación e ideación.
+
+## Objetivo
+
+Mi objetivo es combinar diseño, tecnología e Inteligencia Artificial para desarrollar soluciones visuales y digitales funcionales, modernas y adaptadas a las necesidades de cada proyecto.
+
+## Contacto
+
+Puedes conocer mis proyectos y contactarme directamente a través de mi portafolio.
+
+---
+
+© 2026 Matías González
